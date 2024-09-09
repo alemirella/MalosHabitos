@@ -1,10 +1,10 @@
-x = 10
-y = 5
-z = x + y
+def multiplicacion(factor1, factor2):
+    producto = factor1 * factor2
+    return producto
 
-def f(a, b):
-    c = a * b
-    return c
+if  __name__=="__main__":
+    multiplicando = float(input("Multiplicando: "))
+    multiplicador = float(input("Multiplicador: "))
 
-resultado = f(x, z)
-print(resultado)
+    resultado = multiplicacion(multiplicando, multiplicador)
+    print(f"{multiplicando} * {multiplicador} = {resultado}")
